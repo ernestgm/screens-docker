@@ -54,8 +54,8 @@ services:
     image: centrifugo/centrifugo:v5
     container_name: centrifugo
     restart: unless-stopped
-    expose:
-      - 8000
+    ports:
+      - "8000:8000"
     networks:
       - appnet
     volumes:
